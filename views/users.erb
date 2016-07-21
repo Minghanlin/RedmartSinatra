@@ -1,7 +1,9 @@
-<ul>
+<h2>Getting Users from DataBase</h2>
+
+<ul class='list-inline'>
   <% @users.each { |user| %>
   <li>
-      <%= user %>
+      <%= user[:name] %>
   </li>
   <% } %>
 </ul>
