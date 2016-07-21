@@ -3,6 +3,9 @@ class RedmartSinatraApp < Sinatra::Base
       erb "Hello World"
     end
 
+  get '/about' do
+      erb "About Redmart"
+    end
 
 
   get '/users' do
