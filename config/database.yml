@@ -1,8 +1,8 @@
-#development:
-#  adapter: postgresql
-#  database: redmart
-
 development:
+  adapter: postgresql
+  database: redmart
+
+production:
   adapter: postgresql
   database: d1071g87njgstg
   username: gqufuzltilbuko
