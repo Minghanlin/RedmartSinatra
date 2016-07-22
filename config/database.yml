@@ -1,3 +1,9 @@
+#development:
+#  adapter: postgresql
+#  database: redmart
+
 development:
   adapter: postgresql
-  database: redmart
+  database: d1071g87njgstg
+  username: gqufuzltilbuko
+  password: KAt2GHTD_st3W4B7dtSx2w24Lj
