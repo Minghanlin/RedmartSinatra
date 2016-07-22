@@ -22,4 +22,25 @@ class RedmartSinatraApp < Sinatra::Base
     get "/users/:id/edit" do
       erb :'users/edit'
     end
+
+    post '/users' do
+      puts params[:user]
+
+    @new_user = User.new(params[:user])
+
+    if @new_user.save
+      redirect("/users")
+    else
+      erb :"users/new"
+    end
   end
+
+  put '/users/:id' do
+  end
+
+  delete '/users/:id' do
+  end
+
+
+
+end
