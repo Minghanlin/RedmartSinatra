@@ -2,7 +2,7 @@ class RedmartSinatraApp < Sinatra::Base
   get '/' do
       erb "Hello World"
     end
-    
+
 # Restful resources
 
     get '/users' do
@@ -22,3 +22,4 @@ class RedmartSinatraApp < Sinatra::Base
     get "/users/:id/edit" do
       erb :'users/edit'
     end
+  end
