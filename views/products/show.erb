@@ -1,0 +1,9 @@
+<h3><%= @product[:name] %>'s Page</h3>
+<p><%= @product[:category] %></p>
+<p><%= @product[:price] %></p>
+
+<!-- delete flow  -->
+<form action="/products/<%= @product[:id] %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>

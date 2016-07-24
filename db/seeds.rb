@@ -12,9 +12,10 @@ require 'faker'
 end
 
 
-#User.new
-#@new_user = User.new
-#@new_user[:name] = 'Prima'
-
-
-#User.create
+(0..10).each do |i|
+  Product.create(
+  name: Faker::Pokemon.name,
+  category: Faker::Commerce.department,
+  price: Faker::Commerce.price
+  )
+end

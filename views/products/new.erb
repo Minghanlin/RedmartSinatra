@@ -1,0 +1,27 @@
+<h3>Form to create new product</h3>
+
+<form action="/products" method="post">
+
+  <div class="form-group">
+    <label>Name
+      <input type="text" name="product[name]">
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Category
+      <input type="text" name="product[category]">
+    </label>
+  </div>
+
+
+  <div class="form-group">
+    <label>Price
+      <input type="integer" name="product[price]">
+    </label>
+  </div>
+
+
+
+  <input type="submit" value="submit">
+</form>

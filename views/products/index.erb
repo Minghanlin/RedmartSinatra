@@ -1,0 +1,31 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+    <tr>
+      <td>
+        <%= product[:id] %>
+      </td>
+      <td>
+        <%= product[:name] %>
+      </td>
+      <td>
+        <!-- show flow -->
+        <a href="/products/<%= product[:id] %>">View</a> |
+        <a href="/products/<%= product[:id] %>/edit">Edit</a>
+        <!-- delete flow  -->
+        <form action="/products/<%= product[:id] %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Delete">
+        </form>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
