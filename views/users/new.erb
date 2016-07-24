@@ -1,20 +1,32 @@
-
-
-<h3> Register Here </h3>
+<h3>Form to create new user / Register here</h3>
 
 <form action="/users" method="post">
-  <label for="name">New User Name</label>
-  <input id="name" type="text" name="user[name]" value="">
 
-  <label for="address">Address</label>
-  <input id="address" type="text" name="user[address]" value="">
+  <div class="form-group">
+    <label>Name
+      <input type="text" name="user[name]">
+    </label>
+  </div>
 
-  <label for="email_address">Email Address</label>
-  <input id="email_address" type="text" name="user[email_address]" value="">
+  <div class="form-group">
+    <label>Address
+      <input type="text" name="user[address]">
+    </label>
+  </div>
 
-  <label for="nationality">Nationality</label>
-  <input id="nationality" type="text" name="user[nationality]" value="">
+
+  <div class="form-group">
+    <label>Email Address
+      <input type="text" name="user[email_address]">
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Nationality
+      <input type="text" name="user[nationality]">
+    </label>
+  </div>
+
 
   <input type="submit" value="submit">
-
 </form>

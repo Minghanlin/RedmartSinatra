@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Redmart Sinatra</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
-    <h1>My Redmart Sinatra</h1>
+    <div class="container">
+      <header>
+        <h1>Redmart Sinatra</h1>
+        <nav>
+          <ul>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/users/new">Register</a></li>
+            <li><a href="/products">Change this</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <header>
-      <nav>
-        <ul>
-          <li> <a href="/users">Users</a></li>
-          <li> <a href="/users/new">Register</a></li>
-        </ul>
-      </nav>
-    </header>
-    <%= yield %>
+      <%= yield %>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
-
-
-
-# can link css and js here

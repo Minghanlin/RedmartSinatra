@@ -1,11 +1,44 @@
+<h3>All users list</h3>
 
-
-
-<ul>
-  <% @users.each do |user|  %>
+<!-- <ul>
+  <% @users.each do |user| %>
   <li>
-    <%= user[:'name'] %>
-
+    <a href="users/<%= user[:id] %>">
+      <%= user[:name] %>
+    </a>
+    <a href="#">Delete this user</a>
   </li>
   <% end %>
-</ul>
+</ul> -->
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td>
+        <%= user[:id] %>
+      </td>
+      <td>
+        <%= user[:name] %>
+      </td>
+      <td>
+        <!-- show flow -->
+        <a href="/users/<%= user[:id] %>">View</a> |
+        <a href="/users/<%= user[:id] %>/edit">Edit</a>
+        <!-- delete flow  -->
+        <form action="/users/<%= user[:id] %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Delete">
+        </form>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
