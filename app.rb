@@ -75,7 +75,7 @@ get '/products' do
   erb :'products/index'
 end
 
-get '/productss/:id' do
+get '/products/:id' do
   if params[:id] == 'new'
     erb :'products/new'
   else

@@ -1,4 +1,5 @@
 require './models/user'
+require './models/product'
 require 'faker'
 
 (0..10).each do |i|
@@ -14,7 +15,7 @@ end
 
 (0..10).each do |i|
   Product.create(
-  name: Faker::Pokemon.name,
+  name: Faker::Name.name,
   category: Faker::Commerce.department,
   price: Faker::Commerce.price
   )

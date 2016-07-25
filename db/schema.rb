@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160724133812) do
     t.string   "name",       null: false
     t.string   "photo_url"
     t.string   "category",   null: false
-    t.integer  "price",      null: false
+    t.decimal  "price",      null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
